@@ -62,4 +62,9 @@ public class AppConfig extends WebMvcConfigurerAdapter {
 	public Validator validator() {
 		return new LocalValidatorFactoryBean();
 	}
+	
+//	@Bean
+//	public PasswordEncoder passwordEncoder() {
+//	    return new BCryptPasswordEncoder();
+//	}
 }
