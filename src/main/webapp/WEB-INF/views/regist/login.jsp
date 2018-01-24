@@ -7,25 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:include page="../header.jsp"></jsp:include>
+<jsp:include page="../header.jsp"></jsp:include>
 
+<div class="jumotron">
 
-			<div class="jumotron">
-
-				<h1 class="alert alert-primary">Create new user</h1>
-				<h3 class="text-center">Please sign up</h3>
-				<p>${errorReg }</p>
-			<div class="container">
+				<h1 class="alert alert-success">Already have an account?</h1>
+				<h3 class="text-center">Please sign in</h3>
+				<p>${errorLog }
+			</div>
+			<div class="container" align="center">
 			
-				<f:form action="addUser" method="post" modelAttribute="user">
+				<f:form action="login" method="post" modelAttribute="user">
 					<div class="form-group" align="center">
-						<label for="username">Enter username</label>
+						<label for="username">Email address</label>
 						<f:input path="username" class="form-control" id="username" />
-					</div>
-					<div class="form-group" align="center">
-						<label for="email">Enter email</label>
-						<f:input type="email" path="email" required="required" id="email"
-							class="form-control" />
 					</div>
 					<div class="form-group" align="center">
 						<label for="password">Enter password </label>
@@ -36,9 +31,7 @@
 						<button type="submit" class="btn btn-primary">Add user</button>
 					</div>
 				</f:form>
-				
 			</div>
-			<button type="button" class="btn btn-outline-warning" formaction="login.jsp"><a href="<c:url value="/user/login"/>">Already have an account? Sign in!</a></button>
 		</div>
 </body>
 </html>
