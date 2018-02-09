@@ -1,1 +1,3 @@
-# warsztat6
+# TweeterWorkshop
+
+Basis for Tweeter app. Some improvement needed.
